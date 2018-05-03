@@ -1,0 +1,27 @@
+{
+  "name": "seodetectorfortest",
+  "version": "0.0.1",
+  "description": "Is a lite SEO detector for test",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chonpin/NodeChallenge.git"
+  },
+  "keywords": [
+    "seo",
+    "detector"
+  ],
+  "author": "chonpin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chonpin/NodeChallenge/issues"
+  },
+  "homepage": "https://github.com/chonpin/NodeChallenge#readme"
+}
