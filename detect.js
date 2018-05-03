@@ -55,7 +55,7 @@ function Detect(data) {
 		return this;
 	}
 
-	this.getH1Count = function(){
+	this.checkH1 = function(){
 		var result = $('h1').length;
 		if (result>1){
 			console.log("More than one <H1> tag");
@@ -63,15 +63,13 @@ function Detect(data) {
 		return this;
 	}
 
-	this.getStrongCount = function(){
+	this.checkStrong = function(){
 		var result = $('strong').length;
 		if (result>config.maxStrongTagCount){
 			console.log("Too More <strong> tag ("+result+"/"+config.maxStrongTagCount+")");
 		}
 		return this;
 	}
-
-
 }
 
 module.exports = Detect;
