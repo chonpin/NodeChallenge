@@ -18,4 +18,5 @@ var data = fs.readFileSync(config.documentURI).toString();
 log.debug(data);
 
 detect = new Detect(data);
-detect.checkTitle().checkDescriptions().checkKeywords().getH1Count().getStrongCount();
+detect.checkTitle().checkDescriptions().checkKeywords().checkImgAlt().checkARel().getH1Count().getStrongCount();
+

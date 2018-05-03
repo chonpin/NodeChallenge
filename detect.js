@@ -33,6 +33,28 @@ function Detect(data) {
 		return this;
 	}
 
+	this.checkImgAlt = function(){
+		$('img').each(function(i, elem) {
+  			var result = $(this).attr('alt');
+  			if (result==undefined){
+  				console.log("Detect <img> tag without alt attribute");
+	  			return false;
+	  		}
+		});
+		return this;
+	}
+
+	this.checkARel = function(){
+		$('a').each(function(i, elem) {
+  			var result = $(this).attr('rel');
+  			if (result==undefined){
+  				console.log("Detect <a> tag without rel attribute");
+	  			return false;
+	  		}
+		});
+		return this;
+	}
+
 	this.getH1Count = function(){
 		var result = $('h1').length;
 		if (result>1){
@@ -48,6 +70,7 @@ function Detect(data) {
 		}
 		return this;
 	}
+
 
 }
 
