@@ -19,14 +19,12 @@ function Log(){
 
 	this.debug = function(message, description){
 		if (this.debugMode && ['debug'].indexOf(this.logLevel)>-1){
-			this.info(message, description);
 			this.show("Debug", message, description);
 		}
 	}
 
 	this.info = function(message, description){
 		if (this.debugMode && ['debug', 'info'].indexOf(this.logLevel)>-1){
-			this.error(message, description);
 			this.show("Info", message, description);
 		}
 	}
