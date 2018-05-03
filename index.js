@@ -6,8 +6,8 @@
 
 
 var fs = require('fs');
-var config = require('./config.js');
 var Log = require('./log.js')
+var config = require('./config.js');
 var Detect = require('./detect.js')
 
 log = new Log();
@@ -17,7 +17,5 @@ log.setLogLevel(config.logLevel);
 var data = fs.readFileSync(config.documentURI).toString();
 log.debug(data);
 
-detect = new Detect();
-detect.setData(data);
-//log.info(detect.getImgCount(), 'img tag');
-log.info(detect.checkTitle(), 'head');
+detect = new Detect(data);
+detect.checkTitle().checkDescriptions().checkKeywords().getH1Count().getStrongCount();
