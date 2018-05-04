@@ -14,9 +14,11 @@ log = new Log();
 log.setDebugMode(config.debug);
 log.setLogLevel(config.logLevel);
 
+log.info("Load HTML file...");
 var data = fs.readFileSync(config.documentURI).toString();
-log.debug(data);
+log.debug(data, "HTML content : ");
 
+log.info("Detect HTML for SEO...");
 detect = new Detect(data);
 detect.checkTitle().checkDescriptions().checkKeywords().checkImgAlt().checkARel().checkH1().checkStrong();
 
