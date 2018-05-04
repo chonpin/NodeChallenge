@@ -1,4 +1,4 @@
-NodeJS code challenge assignment
+NodeJS code challenge assignment ( Test project )
 
 Author : chonpin
 
