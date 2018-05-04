@@ -9,7 +9,8 @@ CreateDate : 2018/05/02
 ##### npm install seodetectorfortest
 
 ### Demo
-##### node demo.js
+* npm update
+* node demo.js
 
 ### Configure
 ##### Debug setting
